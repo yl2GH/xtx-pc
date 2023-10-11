@@ -162,3 +162,151 @@
     font-size: 14px;
     color: #fffefe;
 }
+
+
+/* 底部区域 */
+.footer {
+    margin-top: 40px;
+    height: 580px;
+    background-color: #F5F5F5;
+}
+
+/* 服务区域 */
+.service {
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+
+}
+
+.service ul {
+    /* 父级设置flex */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service li {
+    /* 父级设置flex */
+    display: flex;
+
+    width: 190px;
+    height: 58px;
+}
+
+.service li h4 {
+    margin-right: 20px;
+
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprite.png);
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+
+.service li:nth-child(2) h4 {
+    background-position-y: -58px;
+}
+
+.service li:nth-child(3) h4 {
+    background-position-y: -116px;
+}
+
+.service li:nth-child(4) h4 {
+    background-position-y: -174px;
+}
+
+.service p {
+    font-size: 28px;
+    line-height: 58px;
+}
+
+
+/* 帮助中心区域 */
+.help {
+    /* 父级设置flex */
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 60px;
+    height: 302px;
+}
+
+.help .left {
+    /* 父级设置flex */
+    display: flex;
+}
+
+.help .left dl {
+    margin-right: 84px;
+}
+
+.help .left:last-child dl {
+    margin-right: none;
+}
+
+.help .left dt {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+.help .left dd a {
+    color: #969696;
+}
+
+.help .left .iconfont {
+    margin-left: 5px;
+
+    color: #5EB69C;
+}
+
+.help .right ul {
+    /* 父级设置flex */
+    display: flex;
+}
+
+.help .right li:first-child {
+    margin-right: 55px;
+    background-image: url(../images/wechat.png);
+    background-repeat: no-repeat;
+}
+
+.help .right li:nth-child(2) {
+    background-image: url(../images/wechat.png);
+    background-repeat: no-repeat;
+}
+
+.help .right div {
+    margin-bottom: 10px;
+
+    width: 120px;
+    height: 120px;
+}
+
+.help .right p {
+    color: #969696;
+    text-align: center;
+}
+
+
+
+
+/* 版权区域 */
+.copyright {
+    margin: 0 auto;
+    height: 60px;
+
+    text-align: center;
+}
+
+.copyright p {
+    margin-bottom: 10px;
+
+    color: #A1A1A1;
+}
+
+.copyright p a{
+    margin: 0 10px;
+
+    color: #A1A1A1;
+}
