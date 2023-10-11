@@ -1,0 +1,5 @@
+Favicon图标：网页图标，出现在浏览器标题栏，增加网站辨识度。
+图标：favicon.ico，一般存放在网站的根目录里面
+用link标签引入
+快捷写法 link:favicon
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
