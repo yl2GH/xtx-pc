@@ -1,2 +1,48 @@
 /* 首页CSS样式 */
 
+/* 快捷导航区域（shortcut） */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    /* 父级设置flex */
+    display: flex;
+    /* 设置主轴对齐方式flex-end，靠右侧排列 */
+    justify-content: flex-end;
+
+    height: 52px;
+}
+
+.shortcut ul {
+    /* 父级设置flex */
+    display: flex;
+
+    /* 行高设置与高度一直，文字垂直居中效果 */
+    line-height: 52px;
+    
+}
+
+.shortcut li a {
+    padding: 0 15px;
+    border-right: 1px solid #999;
+
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #fff;
+}
+
+.shortcut li:nth-child(7) a {
+    border-right: 0;
+}
+
+.shortcut li .iconfont {
+    margin-right: 4px;
+    /* 文字垂直居中 */
+    vertical-align: middle;
+}
+
+.shortcut li .login {
+    color: #5eb69c;
+}
