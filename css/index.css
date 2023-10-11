@@ -46,3 +46,119 @@
 .shortcut li .login {
     color: #5eb69c;
 }
+
+
+/* 头部区域（header） */
+
+.header {
+    /* 父级设置flex */
+    display: flex;
+
+    margin: 22px auto;
+    height: 88px;
+    
+}
+
+/* logo */
+.logo {
+    margin-right: 40px;
+    width: 200px;
+    height: 88px;
+}
+
+.logo a {
+    /* a标签默认不可更改宽高，转换为块级显示模式 */
+    display: block;
+
+    /* 设置宽高 */
+    width: 200px;
+    height: 88px;
+
+    /* logo图作为背景 */
+    background-image: url(../images/logo.png);
+
+    /* 隐藏文字 */
+    font-size: 0;
+}
+
+/* 导航栏 */
+.nav {
+    margin-top: 33px;
+    margin-right: 28px;
+}
+
+.nav ul {
+    /* 父级设置flex */
+    display: flex;
+}
+
+.nav li a{
+    display: block; 
+    margin-right: 48px;
+    padding-bottom: 8px;
+}
+
+.nav li .active,
+.nav li a:hover {
+    color: #5EB69C;
+    border-bottom: 2px solid #5EB69C;
+}
+
+/* 搜索栏 */
+.search {
+    /* 父级设置flex */
+    display: flex;
+
+    margin-top: 33px;
+    margin-right: 45px;
+
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.search .iconfont {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.search input {
+    /* 把input的默认宽度更改为零，然后用flex分配，剩下的空间都给input */
+    flex: 1;
+    width: 0;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* 购物车 */
+.cart {
+    /* 父级相对定位 */
+    position: relative;
+    margin-top: 34px;
+}
+
+.cart .iconfont {
+    font-size: 24px;
+}
+
+.cart i {
+    /* 子级绝对定位 */
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    /* right定位右对齐，内容会从右向左撑开，如果文字多了可能会覆盖其他内容 */
+    /* right: 1px; */
+
+    padding: 0 6px;
+    border-radius: 8px;
+    background-color: #e26237;
+
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    color: #fffefe;
+}
