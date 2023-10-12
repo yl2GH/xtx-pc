@@ -115,3 +115,153 @@
 .banner ol .current i {
     background-color: #fff;
 }
+
+
+/* 新鲜好物区域 */
+/* 标题--公共样式 */
+.title {
+    /* 父级设置flex */
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    /* background-color: pink; */
+}
+
+.title .left {
+    /* 父级设置flex */
+    display: flex;
+
+    height: 42px;
+}
+
+.title .left h3 {
+    margin-right: 35px;
+
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.title .left p {
+    /* 设置自身侧轴方向下对齐 */
+    align-self: flex-end;
+
+    font-size: 16px;
+    color: #A1A1A1;
+}
+
+.title .right .more {
+    height: 42px;
+    line-height: 42px;
+    color: #A1A1A1;
+}
+
+.title .right .iconfont {
+    margin-left: 10px;
+}
+
+/* 好物区域的内容--公共样式 */
+.bd ul {
+    /* 父级设置flex */
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd li {
+    margin-right: 8px;
+    width: 304px;
+    height: 404px;
+    background-color: #EEF9F4;
+} 
+
+.bd li a .pic{
+    width: 304px;
+    height: 304px;
+}
+
+.bd li a .txt {
+    text-align: center;
+}
+
+.bd li a h4 {
+    margin-top: 17px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+/* 与其他区域不一致的地方记得加上父级选择器 */
+.goods .bd li a p {
+    font-size: 18px;
+    color: #AA2113;
+}
+
+.goods .bd li a p span {
+    font-size: 22px;
+}
+
+
+/* 人气推荐区域 */
+/* 不相同部分 */
+.recommend .bd li {
+    background-color: #fff;
+}
+
+.recommend .bd li a p {
+    font-size: 16px;
+    color: #A1A1A1;
+}
+
+/* 热门品牌区域 */
+.brand {
+    margin-top: 60px;
+    height: 468px;
+    background-color: #F5F5F5;
+}
+
+.brand .wrapper {
+    /* 父级加overflow: hidden;解决塌陷问题 */
+    overflow: hidden;
+    height: 468px;
+}
+
+.brand .title {
+    /* 父级相对定位 */
+    position: relative;
+
+    margin-bottom: 40px;
+}
+
+.brand .button {
+    /* 父级设置flex */
+    /* 为了让a在一行显示且设置宽高生效 */
+    display: flex;
+    /* 子级绝对定位 */
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+}
+
+.brand .button a {
+    margin-left: 12px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+}
+
+.brand .button .prev {
+    background-color: #ddd;
+}
+
+.brand .button .next {
+    background-color: #00BE9A;
+}
+
+.brand .bd li {
+    width: 244px;
+    height: 306px;
+}
