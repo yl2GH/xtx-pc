@@ -265,3 +265,144 @@
     width: 244px;
     height: 306px;
 }
+
+
+/* 生鲜区域 */
+/* 标题区域 */
+.fresh .title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.title .right {
+    /* 父级设置flex */
+    display: flex;
+    
+}
+
+.title .right ul {
+    /* 父级设置flex */
+    display: flex;
+    align-items: center;
+
+    margin-right: 58px;
+}
+
+.title .right ul li a {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: 6px;
+    height: 22px;
+    font-size: 16px;
+    /* background-color: pink; */
+}
+
+.title .right ul li .active,
+.title .right ul li a:hover {
+    background-color: #00BE9A;
+    color: #fff ;
+}
+
+/* 内容区域 */
+.content {
+    /* 父级设置flex */
+    display: flex;
+}
+
+.content .left {
+    margin-right: 24px;
+    width: 248px;
+    height: 610px;
+    /* background-color: pink; */
+}
+
+.content .right {
+    width: 968px;
+    height: 610px;
+}
+
+.content .right ul {
+    /* 父级设置flex */
+    display: flex;
+    /* flex-wrap取值wrap，弹性盒子换行显示 */
+    flex-wrap: wrap;
+}
+
+.content .right ul li {
+    position: relative;
+    padding: 10px 21px 0px;
+    width: 242px;
+    height: 305px;
+    /* 设置溢出隐藏 */
+    overflow: hidden;
+}
+
+.content .right ul li a {
+    display: block;
+    width: 242px;
+    height: 305px;
+}
+
+.content .right .pic {
+    width: 200px;
+    height: 180px;
+}
+
+.content .right .txt .info {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    width: 200px;
+    height: 57px;
+    line-height: 19px;
+    font-size: 16px;
+}
+
+.content .right .txt .price {
+    font-size: 16px;
+    color: #AF2F22;
+}
+
+.content .price span {
+    font-size: 22px;
+}
+
+/* 产品底部绿色区域 */
+.content .right .cover {
+    width: 242px;
+    height: 84px;
+    padding-top: 15px;
+    background-color: #00BE9A;
+    color: #fff;
+    text-align: center;
+    /* 过渡效果 */
+    transition: all 0.5s;
+}
+.content .right .cover p:first-child {
+    font-size: 18px;
+}
+
+.content .right .cover p:nth-child(2) {
+    margin: 3px auto 6px;
+    width: 120px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.content .right .cover p:nth-child(3) {
+    font-size: 13px;
+}
+
+.content .right .cover p:nth-child(3) .iconfont{
+    font-size: 13px;
+}
+
+.content .right ul li:hover {
+    border: 2px solid #00BE9A;
+    padding: 8px 19px 0px;
+}
+
+.content .right ul li:hover .cover{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
