@@ -331,16 +331,11 @@
 .content .right ul li {
     position: relative;
     padding: 10px 21px 0px;
+    border: 2px solid #fff;
     width: 242px;
     height: 305px;
     /* 设置溢出隐藏 */
     overflow: hidden;
-}
-
-.content .right ul li a {
-    display: block;
-    width: 242px;
-    height: 305px;
 }
 
 .content .right .pic {
@@ -368,6 +363,9 @@
 
 /* 产品底部绿色区域 */
 .content .right .cover {
+    position: absolute;
+    left: 0;
+    bottom: -84px;
     width: 242px;
     height: 84px;
     padding-top: 15px;
@@ -398,11 +396,10 @@
 
 .content .right ul li:hover {
     border: 2px solid #00BE9A;
-    padding: 8px 19px 0px;
 }
 
 .content .right ul li:hover .cover{
-    position: absolute;
+    
     left: 0;
     bottom: 0;
 }
