@@ -403,3 +403,110 @@
     left: 0;
     bottom: 0;
 }
+
+/* 最新专题区域 */
+.topic {
+    margin-bottom: 20px;
+}
+
+.topic .title {
+    margin-top: 100px;
+}
+
+.topic-bd ul {
+    /* 父级设置flex */
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic-bd li {
+    width: 405px;
+    height: 355px;
+    /* background-color: pink; */
+}
+
+.topic-bd .pic {
+    /* 父级相对定位 */
+    position: relative;
+
+    width: 405px;
+    height: 288px;
+}
+
+.topic-bd .txt {
+    /* 父级设置flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+    width: 405px;
+    height: 67px;
+
+    font-size: 14px;
+    color: #666;
+}
+
+.topic-bd .txt .left {
+    /* 父级设置flex */
+    display: flex;
+}
+
+.topic-bd .txt .left p {
+    margin-right: 20px;
+}
+
+.topic-bd .txt .left p:nth-child(1) .iconfont {
+    cursor: pointer;   
+    color: #AA2113;  
+}
+
+/* 定位区域 - 文字 */
+.topic .pic .cover {
+    /* 父级设置flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+
+    /* 子级绝对定位 */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 405px;
+    height: 90px;
+    /* 渐变效果 */
+    background-image: linear-gradient(180deg, rgba(137,137,137,0.00) 0%, rgba(0,0,0,0.98) 100%);
+    /* background-color: pink; */
+
+}
+
+.topic .pic .cover .left h4 {
+    margin-bottom: 6px;
+
+    font-size: 20px;
+    color: #fff;
+}
+
+.topic .pic .cover .left p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.topic .pic .cover .right {
+    height: 25px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.topic .pic .cover .right p {
+    padding: 0 7px;
+    font-size: 16px;
+    color: #AA2113;
+}
+
+.topic .pic .cover .right span {
+    font-size: 18px;
+}
